@@ -1,6 +1,9 @@
 # MediatorPlant
 Plant Project mediator pattern
 
+'''''!!!!!!!!!!to do __ video showing the movement. ,  water amount in ml with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant. make nicer folders , names for git files
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
  The Idea of this project was to make use of the robotic arm and a sensor to know when a plant needs water and then let the robot give the water. And to automate this with siple services that can be executed from the cpee.org.
 
  For this project an orangepi was used. The sensor made ready by soldering the pins, connecting it ocrrectly and a test programm to check for output and to callibrate the humitity sensitivity to a reasonable amount so that the plant can get water at apropiate times. The sensitivity in this case with an az delivery humidity sensor is adjusted with a screw on the sensor itself.
