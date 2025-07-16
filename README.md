@@ -1,7 +1,7 @@
 # MediatorPlant
 Plant Project mediator pattern
 
-'''''!!!!!!!!!!to do __ video showing the movement. ,  water amount in ml with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant. make nicer folders , names for git files
+'''''!!!!!!!!!!to do __ video showing the movement. ,  water amount in ml with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant. make nicer folders , names for git files  bottle being half full or less to not move in the grip
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
  The Idea of this project was to make use of the robotic arm and a sensor to know when a plant needs water and then let the robot give the water. And to automate this with siple services that can be executed from the cpee.org.
