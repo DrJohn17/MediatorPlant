@@ -1,0 +1,51 @@
+ Program
+   Robot Program
+     water_amount≔in2
+     Gripper Activate
+     MoveJ
+       Waypoint_5
+     MoveJ
+       Waypoint_11
+     MoveJ
+       Waypoint_1
+     Gripper Open (1)
+     MoveJ
+       Waypoint_3
+     Gripper Move16% (1)
+     MoveJ
+       Waypoint_10
+       Waypoint_19
+     MoveJ
+       Waypoint_4
+     Loop water_amount>0
+       MoveJ
+         Waypoint_6
+         Waypoint_7
+       MoveJ
+         Waypoint_2
+       MoveJ
+         Waypoint_9
+       MoveJ
+         Waypoint_12
+         Waypoint_16
+         Waypoint_8
+         Waypoint_17
+       MoveJ
+         Waypoint_13
+         Waypoint_18
+       MoveJ
+         Waypoint_15
+         Waypoint_14
+         Waypoint_4
+       water_amount≔water_amount-1
+     MoveJ
+       Waypoint_19
+       Waypoint_10
+       Waypoint_3
+     Gripper Open (1)
+     MoveJ
+       Waypoint_1
+       Waypoint_11
+     MoveJ
+       Waypoint_5
+     Gripper Close (1)
