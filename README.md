@@ -23,16 +23,16 @@ Plant Project mediator pattern
 
  Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. 
 
-<img width="423" height="618" alt="grafik" src="https://github.com/user-attachments/assets/0384757e-c3a7-49c3-9f84-86657f2359ab" />
+<img width="449" height="648" alt="grafik" src="https://github.com/user-attachments/assets/b32c44df-5ef0-44d2-9304-1c2645e5931e" />
 
-!!!!!!!!!!!meter brazo!!!!
  In this split up setting we start by getting the robot in position infornt of the bottles, "b_base0.urp".
  Then we take the bottle in the middle, "b_bot1.urp".     
  next we go to the base position for refilling the cap with water/ giving water with "b_mbase2.urp".
  then the actual watering motion "b_watering3.urp".
- and lastly the end, "b_zend4.urp" giving back the bottle and returning to the initial position.
-The loop here instead of bein a variable going to the arm stays in CPEE, and we also use "water_amount" but in an easier more robust way.
+ then giving back the bottle from and back to the base posittion "b_zback4.urp".
+ and lastly the end, "b_zend5.urp" returning to the initial position from its base position.
+The loop here instead of being a variable going to the arm stays in CPEE, and we also use "water_amount" but in an easier more robust way.
 
- Therefore here a modification can be easier as for example a small program for the bottle chosen can be replaced to pick up a different bottle and do the same proccess. Just changing the few steps in "b_bot1.urp" whithout risking to damage the other steps. 
+ Therefore here a modification can be easier as for example a small program for the bottle chosen can be replaced to pick up a different bottle and do the same proccess. Just changing the few steps in "b_bot1.urp" whithout risking to damage the other steps. Also when debugging it is easier to return the arm to the wished position without having to leave the remote control version and having to execute the code from the robot arm. This way executing the relevant part from the CPEE process can fix the problem in a more convenient way.  
 
 
