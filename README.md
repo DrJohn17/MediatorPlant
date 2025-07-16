@@ -7,21 +7,20 @@ Plant Project mediator pattern
 
 <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/bodenfeuchtesensor-pflanzen-feuchte-messgerat-mit-korrosionsbestandiger-sonde-kompatibel-mit-arduino-und-raspberry-pi-331653.jpg" width="250" />
 
-  The test file is awailable under:  xxxxxxxxxxxxxxxxxxxxx  it simply prints the current state called dry or wet frequently helping to detect changes fast.
+  The test file is awailable under: "test_gpio_input.py" it simply prints the current state called dry or wet frequently helping to detect changes fast.
 
  To hold the plant next to the table and to ensure it is always in the same position an individualized holder was designed and 3d printed, it can be seen in the file "Plantholder2.stl". This was performed using onshape.
  <img width="350" height="300" alt="grafik" src="https://github.com/user-attachments/assets/66c4ef1e-2bdc-4d81-92c0-947b41ae0b04" />
 
 
- Next the real program was written on the orangepi (see: xxxxxxxxxxx) and later bottle, to connect the sensor and orangepi to the CPEE process engine, allowing communication and access to the current status with "https-get://lehre.bpm.in.tum.de/ports/19234/".
+ Next the real program was written on the orangepi (see: "soil-sensor.py") and later including bottle, to connect the sensor and orangepi to the CPEE process engine, allowing communication and access to the current status with "https-get://lehre.bpm.in.tum.de/ports/19234/".
 
  In CPEE a process was modeled to represent the whole process divided into smaller steps calling the respective services. This initial proces can be accesed in the "PlantW(10).xml" file. 
 
  <img width="300" height="400" alt="Screenshot 2025-07-15 at 12-11-37 PlantW (53853)" src="https://github.com/user-attachments/assets/91a9f896-d2c6-465d-9d9c-7250d8fa1e8b" />
 
- so it is a loop that waits for the specified time (in minutes) using the "powernap.php" function, half a day for example (720 minutes) sounds reasonable but it can be personalised easily if needed. Then the sensor is called to get the current humidity state at the plant, in case this is dry we go and call the robot to perform a function "BurkatUlrichPlant.urp"   !!!!!!!!!!!!!!!!  meter!!!!!!!!!!!!!   that will take a specified bottle infornt of it (the one in the middle in this case) turn it using a special cap that holds a specific amout of liquid and then turns it  to give the water (in this case) to the plant and then returns the botle to its place in the same position to ensure the program can be repeated multiple times without a need of human intervention. To make it more customisable, this function includes a loop that holds the part were we turn the bottle and give water. A variable "water_amount" is defined and sent to the robot as a put, with this the numeber of times the action is repeaded can be decided ensureing the plant can get enough water, a small number would lead to the arm activating more often the next loop instances, and big number would give too much water, leaving the status as wet for the next days but also harming the plant probably. 
+ so it is a loop that waits for the specified time (in minutes) using the "powernap.php" function, half a day for example (720 minutes) sounds reasonable but it can be personalised easily if needed. Then the sensor is called to get the current humidity state at the plant, in case this is dry we go and call the robot to perform a function "BurkatUlrichPlant.urp" that will take a specified bottle infornt of it (the one in the middle in this case) turn it using a special cap that holds a specific amout of liquid and then turns it  to give the water (in this case) to the plant and then returns the botle to its place in the same position to ensure the program can be repeated multiple times without a need of human intervention. To make it more customisable, this function includes a loop that holds the part were we turn the bottle and give water. A variable "water_amount" is defined and sent to the robot as a put, with this the numeber of times the action is repeaded can be decided ensureing the plant can get enough water, a small number would lead to the arm activating more often the next loop instances, and big number would give too much water, leaving the status as wet for the next days but also harming the plant probably. 
 
-!!!!!!!!!!!!meter codigos robot!!!!!!!!!
  Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. 
  In this split up setting we start by getting the robot in position infornt of the bottles, "b_base0.urp".
  Then we take the bottle in the middle, "b_bot1.urp".     
