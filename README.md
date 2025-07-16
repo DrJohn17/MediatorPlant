@@ -23,7 +23,7 @@ Plant Project mediator pattern
 
  Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. 
 
-<img width="449" height="648" alt="grafik" src="https://github.com/user-attachments/assets/b32c44df-5ef0-44d2-9304-1c2645e5931e" />
+<img width="289" height="422" alt="grafik" src="https://github.com/user-attachments/assets/8169890b-fea5-4615-a0ff-21dd562c5140" />
 
  In this split up setting we start by getting the robot in position infornt of the bottles, "b_base0.urp".
  Then we take the bottle in the middle, "b_bot1.urp".     
