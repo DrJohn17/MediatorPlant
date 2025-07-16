@@ -1,0 +1,24 @@
+ Program
+   Robot Program
+     MoveJ
+       Waypoint_19
+       Waypoint_4
+       Waypoint_6
+       Waypoint_7
+     MoveJ
+       Waypoint_2
+     MoveJ
+       Waypoint_9
+     MoveJ
+       Waypoint_12
+       Waypoint_16
+       Waypoint_8
+       Waypoint_17
+     MoveJ
+       Waypoint_13
+       Waypoint_18
+     MoveJ
+       Waypoint_15
+       Waypoint_14
+       Waypoint_4
+       Waypoint_19

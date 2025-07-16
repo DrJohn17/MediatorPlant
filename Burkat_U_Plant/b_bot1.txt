@@ -1,0 +1,11 @@
+ Program
+   Robot Program
+     MoveJ
+       Waypoint_1
+     Gripper Open (1)
+     MoveJ
+       Waypoint_3
+     Gripper Close (1)
+     MoveJ
+       Waypoint_10
+       Waypoint_19

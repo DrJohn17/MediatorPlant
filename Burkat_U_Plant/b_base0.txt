@@ -1,0 +1,9 @@
+ Program
+   Robot Program
+     MoveJ
+       Waypoint_5
+     MoveJ
+       Waypoint_11
+     MoveJ
+       Waypoint_1
+     Gripper Activate
