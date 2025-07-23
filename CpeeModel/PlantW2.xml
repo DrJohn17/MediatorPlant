@@ -32,7 +32,12 @@
   </attributes>
   <description>
     <description xmlns="http://cpee.org/ns/description/1.0">
-      <loop mode="post_test" condition="">
+      <loop mode="post_test" condition="True">
+        <_probability>
+          <_probability_min/>
+          <_probability_max/>
+          <_probability_avg/>
+        </_probability>
         <call id="a4" endpoint="longsleep">
           <parameters>
             <label>sleep 12h (in minnutes)</label>
@@ -399,11 +404,6 @@
           </alternative>
           <otherwise/>
         </choose>
-        <_probability>
-          <_probability_min/>
-          <_probability_max/>
-          <_probability_avg/>
-        </_probability>
       </loop>
     </description>
   </description>
