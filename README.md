@@ -24,9 +24,13 @@ Plant Project mediator pattern
 
  so it is a loop that waits for the specified time (in minutes) using the "powernap.php" function, half a day for example (720 minutes) sounds reasonable but it can be personalised easily if needed. Then the sensor is called to get the current humidity state at the plant, in case this is dry we go and call the robot to perform a function "BurkatUlrichPlant.urp" that will take a specified bottle infornt of it (the one in the middle in this case) turn it using a special cap that holds a specific amout of liquid and then turns it  to give the water (in this case) to the plant and then returns the botle to its place in the same position to ensure the program can be repeated multiple times without a need of human intervention. To make it more customisable, this function includes a loop that holds the part were we turn the bottle and give water. A variable "water_amount" is defined and sent to the robot as a put, with this the numeber of times the action is repeaded can be decided ensureing the plant can get enough water, a small number would lead to the arm activating more often the next loop instances, and big number would give too much water, leaving the status as wet for the next days but also harming the plant probably. 
 
- Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. 
+ Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. The files for this version can be found in the "CpeeModel" folder as "PlantW2". 
 
 <img width="289" height="422" alt="grafik" src="https://github.com/user-attachments/assets/8169890b-fea5-4615-a0ff-21dd562c5140" />
+
+<img width="760" height="1127" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
+<img width="350" height="560" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
+
 
  In this split up setting we start by getting the robot in position infornt of the bottles, "b_base0.urp".
  Then we take the bottle in the middle, "b_bot1.urp".     
