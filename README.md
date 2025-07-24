@@ -26,9 +26,7 @@ Plant Project mediator pattern
 
  Then in the spirit of simpler services, increasing modularity and making changes easier the robot arm code was adapted into smaller parts each eaquivalent to an important part of the previous all-in-one file. The files for this version can be found in the "CpeeModel" folder as "PlantW2". 
 
-<img width="289" height="422" alt="grafik" src="https://github.com/user-attachments/assets/8169890b-fea5-4615-a0ff-21dd562c5140" />
 
-<img width="760" height="1127" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
 <img width="350" height="560" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
 
 
