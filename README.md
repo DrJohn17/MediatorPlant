@@ -18,7 +18,7 @@ Plant Project mediator pattern
 
  Next the real program was written on the orangepi (see: "soil-sensor.py") and later including bottle, to connect the sensor and orangepi to the CPEE process engine, allowing communication and access to the current status with "https-get://lehre.bpm.in.tum.de/ports/19234/".
 
- In CPEE a process was modeled to represent the whole process divided into smaller steps calling the respective services. This initial proces can be accesed in the "PlantW(10).xml" file. 
+ In CPEE a process was modeled to represent the whole process divided into smaller steps calling the respective services. This initial proces can be accessed in the "PlantW.xml" file. 
 
  <img width="300" height="400" alt="Screenshot 2025-07-15 at 12-11-37 PlantW (53853)" src="https://github.com/user-attachments/assets/91a9f896-d2c6-465d-9d9c-7250d8fa1e8b" />
 
@@ -42,4 +42,6 @@ The loop here instead of being a variable going to the arm stays in CPEE, and we
 
  Therefore here a modification can be easier as for example a small program for the bottle chosen can be replaced to pick up a different bottle and do the same proccess. Just changing the few steps in "b_bot1.urp" whithout risking to damage the other steps. Also when debugging it is easier to return the arm to the wished position without having to leave the remote control version and having to execute the code from the robot arm. This way executing the relevant part from the CPEE process can fix the problem in a more convenient way.  
 
+The whole procces in action can be seen in this video:
+https://youtube.com/shorts/iOo_pSGZa18
 
