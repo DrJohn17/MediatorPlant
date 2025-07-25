@@ -13,6 +13,7 @@ Plant Project mediator pattern
   The test file is available under: "test_gpio_input.py." It simply prints the current state, which is called dry or wet, frequently helping to detect changes quickly.
 
  To hold the plant next to the table and to ensure it is always in the same position, an individualised holder was designed and 3d printed. It can be seen in the file "Plantholder2.stl". This was performed using Onshape.
+ 
  <img width="350" height="300" alt="grafik" src="https://github.com/user-attachments/assets/66c4ef1e-2bdc-4d81-92c0-947b41ae0b04" />
  
  Next, the real program was written on the orangepi (see: "soil-sensor.py") and later including Bottle, to connect the sensor and orangepi to the CPEE process engine, allowing communication and access to the current status with "https-get://lehre.bpm.in.tum.de/ports/19234/".
