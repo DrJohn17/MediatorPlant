@@ -1,7 +1,7 @@
 # MediatorPlant
 Plant Project mediator pattern
 
-![WhatsApp Bild 2025-07-24 um 12 57 34_c5b08048](https://github.com/user-attachments/assets/dee0a37e-709f-4e56-838d-618e6e598996)
+<img src="https://github.com/DrJohn17/MediatorPlant/blob/main/plant.jpg" width="250" />
 
 '''''!!!!!!!!!!  make nicer folders , names for git files,  bottle being half full or less to not move in the grip
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -23,7 +23,7 @@ with calculation , earth amount relative humitity setting the sensor to an expec
  The humidity sensor’s sensitivity is calibrated based on realistic soil water capacity and plant hydration needs. For a standard 11 cm pot:
 xxxxxxxxxxx
 
-![WhatsApp Bild 2025-07-24 um 12 57 32_8fdb410d](https://github.com/user-attachments/assets/ee205ef5-28c5-4500-9e68-b18baf8adf33) ![WhatsApp Bild 2025-07-24 um 12 57 33_fe0a69fe](https://github.com/user-attachments/assets/6d086d49-b060-4939-90a3-b0420ea9ed2c)
+<img src="https://github.com/DrJohn17/MediatorPlant/blob/main/sensor.jpg" width="250" />  <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/screw.jpg" width="250" />
 
 
   The test file is available under: "test_gpio_input.py." It simply prints the current state, which is called dry or wet, frequently helping to detect changes quickly.
