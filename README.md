@@ -1,10 +1,7 @@
 # MediatorPlant
-Plant Project mediator pattern
+Plant Project mediator pattern.
 
 <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/plant.jpg" width="250" />
-
-'''''!!!!!!!!!!  make nicer folders , names for git files,  bottle being half full or less to not move in the grip
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
  The Idea of this project was to make use of the robotic arm and a sensor to know when a plant needs water, and then let the robot give the water. And to automate this with simple services that can be executed from cpee.org.
 
@@ -12,16 +9,16 @@ Plant Project mediator pattern
  
 <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/bodenfeuchtesensor-pflanzen-feuchte-messgerat-mit-korrosionsbestandiger-sonde-kompatibel-mit-arduino-und-raspberry-pi-331653.jpg" width="250" />
 
- The special bottle cap holds an amount of water of 12 gramms or 12ml.
+ The special bottle cap holds an amount of water of 12 gramms or 12mL.
 It is generally the case that between 0% and 20% of soil moisture (≈ 57 mL water for this plant) corresponds to a “dry” condition where the plant should be watered.
 Humidity from 20% to 40% (≈ 114 mL) is seen as optimal for most houseplants.
 The current calibration of the sensor is set to return "dry" too when the earth is expected to be at 20% moisture.
 
- The plant receives about 12 mL per watering motion of the arm controlable with the "water_amount" vaiable in CPEE, so regular monitoring to see if the current settings fit the plant, especially if it is a different plant  effect must be considered this calibration ensures the sensor responds accurately to real plant needs, avoiding both under- and overwatering
-xxxx 
-with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant.
- The humidity sensor’s sensitivity is calibrated based on realistic soil water capacity and plant hydration needs. For a standard 11 cm pot:
-xxxxxxxxxxx
+ The plant receives about 12 mL per watering motion of the arm controlable with the "water_amount" vaiable in CPEE, so regular monitoring to see if the current settings fit the plant, especially if it is a different plant, effect must be considered this calibration ensures the sensor responds accurately to real plant needs, avoiding both under- and overwatering.
+
+The bottle should not be too full as the weight shifting could make it move a bit in the robot grip, higher friction could be needed if problems occur.
+
+With the estimated amout of water of under 57mL for the current estiamted earth amount the currect setting of water_amount of 2 seems reasonable with 24mL per activation. This could also be increased to 3 or 4 if the goal is to water it less regularly.
 
 <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/sensor.jpg" width="250" />  <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/screw.jpg" width="250" />
 
