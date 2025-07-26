@@ -1,14 +1,30 @@
 # MediatorPlant
 Plant Project mediator pattern
 
-'''''!!!!!!!!!!  water amount in 12gramm in ml with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant. make nicer folders , names for git files  bottle being half full or less to not move in the grip
+![WhatsApp Bild 2025-07-24 um 12 57 34_c5b08048](https://github.com/user-attachments/assets/dee0a37e-709f-4e56-838d-618e6e598996)
+
+'''''!!!!!!!!!!  make nicer folders , names for git files,  bottle being half full or less to not move in the grip
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-  The Idea of this project was to make use of the robotic arm and a sensor to know when a plant needs water, and then let the robot give the water. And to automate this with simple services that can be executed from cpee.org.
+ The Idea of this project was to make use of the robotic arm and a sensor to know when a plant needs water, and then let the robot give the water. And to automate this with simple services that can be executed from cpee.org.
 
  For this project, an orangepi was used. The sensor was made ready by soldering the pins, connecting it correctly and a test program to check for output and to calibrate the humidity sensitivity to a reasonable amount so that the plant can get water at appropriate times. The sensitivity in this case, with an AZ delivery humidity sensor, is adjusted with a screw on the sensor itself.
  
 <img src="https://github.com/DrJohn17/MediatorPlant/blob/main/bodenfeuchtesensor-pflanzen-feuchte-messgerat-mit-korrosionsbestandiger-sonde-kompatibel-mit-arduino-und-raspberry-pi-331653.jpg" width="250" />
+
+ The special bottle cap holds an amount of water of 12 gramms or 12ml.
+It is generally the case that between 0% and 20% of soil moisture (≈ 57 mL water for this plant) corresponds to a “dry” condition where the plant should be watered.
+Humidity from 20% to 40% (≈ 114 mL) is seen as optimal for most houseplants.
+The current calibration of the sensor is set to return "dry" too when the earth is expected to be at 20% moisture.
+
+ The plant receives about 12 mL per watering motion of the arm controlable with the "water_amount" vaiable in CPEE, so regular monitoring to see if the current settings fit the plant, especially if it is a different plant  effect must be considered this calibration ensures the sensor responds accurately to real plant needs, avoiding both under- and overwatering
+xxxx 
+with calculation , earth amount relative humitity setting the sensor to an expected dry specifically adapted for this plant.
+ The humidity sensor’s sensitivity is calibrated based on realistic soil water capacity and plant hydration needs. For a standard 11 cm pot:
+xxxxxxxxxxx
+
+![WhatsApp Bild 2025-07-24 um 12 57 32_8fdb410d](https://github.com/user-attachments/assets/ee205ef5-28c5-4500-9e68-b18baf8adf33) ![WhatsApp Bild 2025-07-24 um 12 57 33_fe0a69fe](https://github.com/user-attachments/assets/6d086d49-b060-4939-90a3-b0420ea9ed2c)
+
 
   The test file is available under: "test_gpio_input.py." It simply prints the current state, which is called dry or wet, frequently helping to detect changes quickly.
 
