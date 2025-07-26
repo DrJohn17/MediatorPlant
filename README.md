@@ -45,7 +45,7 @@ xxxxxxxxxxx
 <img width="350" height="560" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
 
 
- In this split-up setting, we start by getting the robot in position in front of the bottles, "b_base0.urp".
+In this split-up setting, we start by getting the robot in position in front of the bottles, "b_base0.urp".
 Then we take the bottle in the middle, "b_bot1.urp".     
 Next, we go to the base position for refilling the cap with water/ giving water with "b_mbase2.urp".
 Then the actual watering motion "b_watering3.urp".
