@@ -41,7 +41,7 @@ With the estimated amout of water of under 57mL for the current estiamted earth 
 
 <img width="350" height="560" alt="grafik" src="https://github.com/user-attachments/assets/df7294e7-4236-48bf-a4e7-3b02dd68bd5d" />
 
-"PlantW3" files inclue one more step where a mL input in the CPEE data is possible. As estimated for this plant 57 mL of water in the earth still count as dry but as we water regularly I would recomend a value that is not higher that 57mL to ensure it does not get too much water at one time.
+The "PlantW3" files, in the folder "mL input CPPE code", include one more step where a mL input in the CPEE data is possible. As estimated for this plant 57 mL of water in the earth still count as dry but as we water regularly I would recomend a value that is not higher that 57mL to ensure it does not get too much water at one time.
 <img width="577" height="839" alt="grafik" src="https://github.com/user-attachments/assets/a76318aa-ba6a-427c-a988-2ca75ee1ed79" />
 <img width="300" height="490" alt="grafik" src="https://github.com/user-attachments/assets/935fd7ee-ff25-4976-83f6-8673076a7bad" />
 So the data objcets look like the image below and "water_ml" should be the only one changet to the estimated amout per watering session desired. It will be converted to a valid integer ("water_amount") in the new script to be used for the watering loop as "count".
